@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar color="mainColor">
+    <ion-title>Materi 1</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div *ngFor="let judul of juduls">
+		<h1 class="title-text">{{ judul.judul }}</h1>
+	</div>
+	<div *ngFor="let item of items">
+		<p class="content" >
+			{{ item.materi }}
+		</p>
+		<img src="{{ item.img_path }}"/>
+	</div>
+</ion-content>

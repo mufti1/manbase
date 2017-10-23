@@ -1,14 +1,21 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar color="mainColor">
+		<ion-title>
+			ManBase
+		</ion-title>
+	</ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="home">
+	<ion-list no-lines class="list-home">
+		<ion-item>
+			<button ion-button round color="mainColor" class="btn-home" (click)="pindahMateri()">Materi</button>
+		</ion-item>
+		<ion-item>
+			<button ion-button round color="mainColor" class="btn-home" (click)="pindahAbout()">About</button>
+		</ion-item>
+		<ion-item>
+			<button ion-button round color="mainColor" class="btn-home" (click)="pindahQuiz()">Quiz</button>
+		</ion-item>
+	</ion-list>
 </ion-content>

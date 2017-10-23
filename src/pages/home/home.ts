@@ -11,4 +11,16 @@ export class HomePage {
 
   }
 
+  pindahMateri(){
+  	this.navCtrl.push('MenuPage');
+  }
+
+  pindahAbout(){
+  	this.navCtrl.push('AboutPage'); 	
+  }
+
+  pindahQuiz(){
+  	this.navCtrl.push('QuizPage');
+  }
+
 }
